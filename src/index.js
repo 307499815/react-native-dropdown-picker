@@ -63,6 +63,8 @@ class DropDownPicker extends React.Component {
     toggle() {
         this.setState({
             visible: ! this.state.visible
+        },()=>{
+            if(this.props.onVisibleChange) this.props.onVisibleChange(this.state.visible);
         });
     }
 
