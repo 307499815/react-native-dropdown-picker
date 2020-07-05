@@ -194,9 +194,9 @@ DropDownPicker.propTypes = {
 const styles = StyleSheet.create({
     arrow: {
         flexDirection: 'row',
-        justifyContent: 'center',
+        justifyContent: 'flex-start',
         alignItems: 'center',
-        textAlign: 'center',
+        textAlign: 'left',
         paddingVertical: 8,
         borderTopLeftRadius: 0,
         borderBottomLeftRadius: 0,
