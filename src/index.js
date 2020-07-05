@@ -75,7 +75,9 @@ class DropDownPicker extends React.Component {
                 value: item.value
             },
             visible: false
-        });
+        }, ()=>{
+            if(this.props.onVisibleChange) this.props.onVisibleChange(this.state.visible);
+         });
 
         this.props.defaultNull = false;
 
