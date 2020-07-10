@@ -10,7 +10,11 @@ import {
 import PropTypes from 'prop-types';
 
 // Icon
-import Feather from 'react-native-vector-icons/Feather';
+class Feather extends View {
+    render() {
+        return <View {...this.props} />
+    }
+}
 
 class DropDownPicker extends React.Component {
     constructor(props) {
