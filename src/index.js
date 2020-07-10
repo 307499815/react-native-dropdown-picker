@@ -10,7 +10,11 @@ import {
 import PropTypes from 'prop-types';
 
 // Icon
-class Feather extends View {
+class Feather extends React.Component {
+    constructor(props) {
+        super(props);
+    }
+    
     render() {
         return <View {...this.props} />
     }
